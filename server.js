@@ -41,7 +41,7 @@ app.use('/api', notFound);
 
 console.log(__dirname);
 
-const clientDist = path.join(__dirnamess, 'client', 'dist');
+const clientDist = path.join(__dirname, 'client', 'dist');
 app.use(express.static(clientDist));
 
 app.get("/{*splat}", (req, res) => {
